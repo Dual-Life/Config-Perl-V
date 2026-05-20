@@ -45,7 +45,7 @@ SKIP: {
     my $md5 = $@ ? "0" x 32 : "3a52d65d54ee1032f878b51fb20c8efd";
     ok (my $sig = Config::Perl::V::signature ($conf), "Get signature");
     is ($sig, $md5, "MD5");
-}
+    }
 
 is_deeply ($conf->{build}{patches}, [ ], "No patches");
 
