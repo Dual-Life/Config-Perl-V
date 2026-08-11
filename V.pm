@@ -385,8 +385,8 @@ sub myconfig {
 					Config::non_bincompat_options ();
 	}
     else {
-	#y $pv = qx[$^X -e"sub Config::myconfig{};" -V];
-	my $cnf = plv2hash (qx[$^X -V]);
+	#y $pv = qx["$^X" -e"sub Config::myconfig{};" -V];
+	my $cnf = plv2hash (qx["$^X" -V]);
 
 	$build->{$_} = $cnf->{'build'}{$_} for qw( osname stamp patches options );
 	}
