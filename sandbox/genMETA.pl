@@ -41,7 +41,7 @@ version:                 VERSION
 abstract:                Structured data retrieval of perl -V output
 license:                 perl
 author:              
-    - H.Merijn Brand <hmbrand@cpan.org>
+    - H.Merijn Brand <perl5@tux.freedom.nl>
 generated_by:            Author
 distribution_type:       module
 provides:
